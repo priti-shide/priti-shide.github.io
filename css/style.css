@@ -853,3 +853,10 @@
         .skill-icon-w{width:66px;height: 66px;}
         .self-center{align-self: center;}
         .tech-icon{width: 40px;}
+
+         .inline-block{display: inline-block;}
+         .mb-10{margin-bottom: 2.5rem;}
+         .hover:bg-transparent:hover {background-color: transparent;}
+         .hover:text-white:hover {color: #fff;}
+         .mx-2{margin-left: 8px;margin-right: 8px;}
+         .mb-5{margin-bottom: 1.25rem;}
