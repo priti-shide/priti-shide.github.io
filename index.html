@@ -2,133 +2,1311 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="name" content="Priti Shinde|Full Stack Developer">
-    <meta name="description" content="I am a full-stack developer with expertise in a wide range of technologies. During my 3 years of experience, I have worked on several projects from many different industries like Real Estate, eCommerce, and health.">
-    <title>Priti Shinde</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,600;1,700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Priti Shinde | Full Stack Developer</title>
 </head>
+
+<style>
+    /*
+! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com
+*/
+    *,
+    :after,
+    :before {
+        box-sizing: border-box;
+        border: 0 solid #e5e7eb;
+    }
+
+    :after,
+    :before {
+        --tw-content: "";
+    }
+
+    html {
+        line-height: 1.5;
+        -webkit-text-size-adjust: 100%;
+        -moz-tab-size: 4;
+        -o-tab-size: 4;
+        tab-size: 4;
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+            Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+            Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    }
+
+    body {
+        margin: 0;
+        line-height: inherit;
+    }
+
+    hr {
+        height: 0;
+        color: inherit;
+        border-top-width: 1px;
+    }
+
+    abbr:where([title]) {
+        -webkit-text-decoration: underline dotted;
+        text-decoration: underline dotted;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: inherit;
+        font-weight: inherit;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: inherit;
+    }
+
+    b,
+    strong {
+        font-weight: bolder;
+    }
+
+    code,
+    kbd,
+    pre,
+    samp {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+            Liberation Mono, Courier New, monospace;
+        font-size: 1em;
+    }
+
+    small {
+        font-size: 80%;
+    }
+
+    sub,
+    sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+    }
+
+    sub {
+        bottom: -0.25em;
+    }
+
+    sup {
+        top: -0.5em;
+    }
+
+    table {
+        text-indent: 0;
+        border-color: inherit;
+        border-collapse: collapse;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: inherit;
+        color: inherit;
+        margin: 0;
+        padding: 0;
+    }
+
+    button,
+    select {
+        text-transform: none;
+    }
+
+    [type="button"],
+    [type="reset"],
+    [type="submit"],
+    button {
+        -webkit-appearance: button;
+        background-color: transparent;
+        background-image: none;
+    }
+
+    :-moz-focusring {
+        outline: auto;
+    }
+
+    :-moz-ui-invalid {
+        box-shadow: none;
+    }
+
+    progress {
+        vertical-align: baseline;
+    }
+
+    ::-webkit-inner-spin-button,
+    ::-webkit-outer-spin-button {
+        height: auto;
+    }
+
+    [type="search"] {
+        -webkit-appearance: textfield;
+        outline-offset: -2px;
+    }
+
+    ::-webkit-search-decoration {
+        -webkit-appearance: none;
+    }
+
+    ::-webkit-file-upload-button {
+        -webkit-appearance: button;
+        font: inherit;
+    }
+
+    summary {
+        display: list-item;
+    }
+
+    blockquote,
+    dd,
+    dl,
+    figure,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    hr,
+    p,
+    pre {
+        margin: 0;
+    }
+
+    fieldset {
+        margin: 0;
+    }
+
+    fieldset,
+    legend {
+        padding: 0;
+    }
+
+    menu,
+    ol,
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    input::-moz-placeholder,
+    textarea::-moz-placeholder {
+        opacity: 1;
+        color: #9ca3af;
+    }
+
+    input:-ms-input-placeholder,
+    textarea:-ms-input-placeholder {
+        opacity: 1;
+        color: #9ca3af;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        opacity: 1;
+        color: #9ca3af;
+    }
+
+    [role="button"],
+    button {
+        cursor: pointer;
+    }
+
+    :disabled {
+        cursor: default;
+    }
+
+    audio,
+    canvas,
+    embed,
+    iframe,
+    img,
+    object,
+    svg,
+    video {
+        display: block;
+        vertical-align: middle;
+    }
+
+    img,
+    video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    [hidden] {
+        display: none;
+    }
+
+    body {
+        --tw-bg-opacity: 1;
+        background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+    }
+
+    *,
+    :after,
+    :before {
+        --tw-translate-x: 0;
+        --tw-translate-y: 0;
+        --tw-rotate: 0;
+        --tw-skew-x: 0;
+        --tw-skew-y: 0;
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        --tw-pan-x: ;
+        --tw-pan-y: ;
+        --tw-pinch-zoom: ;
+        --tw-scroll-snap-strictness: proximity;
+        --tw-ordinal: ;
+        --tw-slashed-zero: ;
+        --tw-numeric-figure: ;
+        --tw-numeric-spacing: ;
+        --tw-numeric-fraction: ;
+        --tw-ring-inset: ;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: rgba(59, 130, 246, 0.5);
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-colored: 0 0 #0000;
+        --tw-blur: ;
+        --tw-brightness: ;
+        --tw-contrast: ;
+        --tw-grayscale: ;
+        --tw-hue-rotate: ;
+        --tw-invert: ;
+        --tw-saturate: ;
+        --tw-sepia: ;
+        --tw-drop-shadow: ;
+        --tw-backdrop-blur: ;
+        --tw-backdrop-brightness: ;
+        --tw-backdrop-contrast: ;
+        --tw-backdrop-grayscale: ;
+        --tw-backdrop-hue-rotate: ;
+        --tw-backdrop-invert: ;
+        --tw-backdrop-opacity: ;
+        --tw-backdrop-saturate: ;
+        --tw-backdrop-sepia: ;
+    }
+
+    .static {
+        position: static;
+    }
+
+    .float-right {
+        float: right;
+    }
+
+    .my-4 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .my-16 {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .my-8 {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .mt-4 {
+        margin-top: 1rem;
+    }
+
+    .mr-2 {
+        margin-right: 0.5rem;
+    }
+
+    .mt-1 {
+        margin-top: 0.25rem;
+    }
+
+    .mt-5 {
+        margin-top: 1.25rem;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .grid {
+        display: grid;
+    }
+
+    .grid-cols-12 {
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+
+    .grid-cols-5 {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .h-\[23rem\] {
+        height: 23rem;
+    }
+
+    .h-full {
+        height: 100%;
+    }
+
+    .h-\[7rem\] {
+        height: 7rem;
+    }
+
+    .min-h-screen {
+        min-height: 100vh;
+    }
+
+    .w-full {
+        width: 100%;
+    }
+
+    .w-21rem {
+        width: 21rem;
+    }
+
+    .w-14rem {
+        width: 14rem;
+    }
+
+    .min-w-full {
+        min-width: 100%;
+    }
+
+    .cursor-pointer {
+        cursor: pointer;
+    }
+
+    .grid-cols-1 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .col-span-12 {
+        grid-column: span 12 / span 12;
+    }
+
+    .col-span-6 {
+        grid-column: span 6 / span 6;
+    }
+
+    .flex-row {
+        flex-direction: row;
+    }
+
+    .flex-col {
+        flex-direction: column;
+    }
+
+    .flex-wrap {
+        flex-wrap: wrap;
+    }
+
+    .flex-wrap-reverse {
+        flex-wrap: wrap-reverse;
+    }
+
+    .flex-nowrap {
+        flex-wrap: nowrap;
+    }
+
+    .items-center {
+        align-items: center;
+    }
+
+    .justify-center {
+        justify-content: center;
+    }
+
+    .justify-between {
+        justify-content: space-between;
+    }
+
+    .gap-3 {
+        gap: 0.75rem;
+    }
+
+    .gap-6 {
+        gap: 1.5rem;
+    }
+
+    .gap-7 {
+        gap: 1.75rem;
+    }
+
+    .gap-10 {
+        gap: 2.5rem;
+    }
+
+    .gap-4 {
+        gap: 1rem;
+    }
+
+    .gap-x-4 {
+        -moz-column-gap: 1rem;
+        column-gap: 1rem;
+    }
+
+    .divide-y> :not([hidden])~ :not([hidden]) {
+        --tw-divide-y-reverse: 0;
+        border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+        border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+    }
+
+    .divide-dotted> :not([hidden])~ :not([hidden]) {
+        border-style: dotted;
+    }
+
+    .rounded-md {
+        border-radius: 0.375rem;
+    }
+
+    .rounded-lg {
+        border-radius: 0.5rem;
+    }
+
+    .rounded-xl {
+        border-radius: 0.75rem;
+    }
+
+    .rounded-full {
+        border-radius: 9999px;
+    }
+
+    .bg-\[\#fafdfe\] {
+        --tw-bg-opacity: 1;
+        background-color: rgb(250 253 254 / var(--tw-bg-opacity));
+    }
+
+    .bg-purple-600 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(147 51 234 / var(--tw-bg-opacity));
+    }
+
+    .bg-zinc-800 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+    }
+
+    .bg-primary {
+        --tw-bg-opacity: 1;
+        background-color: rgb(1 1 1 / var(--tw-bg-opacity));
+    }
+
+    .bg-yellow-300 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(253 224 71 / var(--tw-bg-opacity));
+    }
+
+    .bg-gray-700 {
+        --tw-bg-opacity: 1;
+        background-color: #374151;
+    }
+
+    .p-2 {
+        padding: 0.5rem;
+    }
+
+    .p-1 {
+        padding: 0.25rem;
+    }
+
+    .p-8 {
+        padding: 2rem;
+    }
+
+    .px-4 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .py-2 {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .px-2 {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .py-\[0\.10rem\] {
+        padding-top: 0.1rem;
+        padding-bottom: 0.1rem;
+    }
+
+    .py-8 {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .px-3 {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+
+    .px-5 {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+    .pt-5 {
+        padding-top: 1.25rem;
+    }
+
+    .pt-2 {
+        padding-top: 0.5rem;
+    }
+
+    .pt-4 {
+        padding-top: 1rem;
+    }
+
+    .pl-2 {
+        padding-left: 0.5rem;
+    }
+
+    .pl-4 {
+        padding-left: 1rem;
+    }
+
+    .pb-5 {
+        padding-bottom: 1.25rem;
+    }
+
+    .pl-1 {
+        padding-left: 0.25rem;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .font-jost {
+        font-family: Barlow, sans-serif;
+    }
+
+    .font-sen {
+        font-family: Josefin Sans, sans-serif;
+    }
+
+    .text-2xl {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .text-xl {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+
+    .text-3xl {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+    }
+
+    .text-lg {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+
+    .font-bold {
+        font-weight: 700;
+    }
+
+    .font-medium {
+        font-weight: 500;
+    }
+
+    .font-semibold {
+        font-weight: 600;
+    }
+
+    .text-gray-800 {
+        --tw-text-opacity: 1;
+        color: rgb(31 41 55 / var(--tw-text-opacity));
+    }
+
+    .text-gray-700 {
+        --tw-text-opacity: 1;
+        color: rgb(55 65 81 / var(--tw-text-opacity));
+    }
+
+    .text-white {
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity));
+    }
+
+    .text-gray-200 {
+        --tw-text-opacity: 1;
+        color: rgb(229 231 235 / var(--tw-text-opacity));
+    }
+
+    .text-gray-300 {
+        --tw-text-opacity: 1;
+        color: rgb(209 213 219 / var(--tw-text-opacity));
+    }
+
+    .text-gray-400 {
+        --tw-text-opacity: 1;
+        color: rgb(156 163 175 / var(--tw-text-opacity));
+    }
+
+    .text-blue-400 {
+        --tw-text-opacity: 1;
+        color: rgb(96 165 250 / var(--tw-text-opacity));
+    }
+
+    .text-blue-600 {
+        --tw-text-opacity: 1;
+        color: rgb(37 99 235 / var(--tw-text-opacity));
+    }
+
+    .text-yellow-400 {
+        --tw-text-opacity: 1;
+        color: rgb(250 204 21 / var(--tw-text-opacity));
+    }
+
+    .text-red-400 {
+        --tw-text-opacity: 1;
+        color: rgb(248 113 113 / var(--tw-text-opacity));
+    }
+
+    .text-blue-500 {
+        --tw-text-opacity: 1;
+        color: rgb(59 130 246 / var(--tw-text-opacity));
+    }
+
+    .text-blue-300 {
+        --tw-text-opacity: 1;
+        color: rgb(147 197 253 / var(--tw-text-opacity));
+    }
+
+    .text-green-400 {
+        --tw-text-opacity: 1;
+        color: rgb(74 222 128 / var(--tw-text-opacity));
+    }
+
+    .text-yellow-300 {
+        --tw-text-opacity: 1;
+        color: rgb(253 224 71 / var(--tw-text-opacity));
+    }
+
+    .text-pink-400 {
+        --tw-text-opacity: 1;
+        color: rgb(244 114 182 / var(--tw-text-opacity));
+    }
+
+    .ring-zinc-300 {
+        --tw-ring-opacity: 1;
+        --tw-ring-color: rgb(212 212 216 / var(--tw-ring-opacity));
+    }
+
+    .transition-all {
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 0.15s;
+    }
+
+    .duration-100 {
+        transition-duration: 0.1s;
+    }
+
+    .duration-150 {
+        transition-duration: 0.15s;
+    }
+
+    * {
+        scroll-behavior: smooth;
+    }
+
+    .hover\:scale-105:hover {
+        --tw-scale-x: 1.05;
+        --tw-scale-y: 1.05;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    }
+
+    .hover\:bg-purple-500:hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(168 85 247 / var(--tw-bg-opacity));
+    }
+
+    .hover\:bg-yellow-400:hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(250 204 21 / var(--tw-bg-opacity));
+    }
+
+    .hover\:text-gray-100:hover {
+        --tw-text-opacity: 1;
+        color: rgb(243 244 246 / var(--tw-text-opacity));
+    }
+
+    .hover\:underline:hover {
+        -webkit-text-decoration-line: underline;
+        text-decoration-line: underline;
+    }
+
+    .hover\:decoration-blue-300:hover {
+        -webkit-text-decoration-color: #93c5fd;
+        text-decoration-color: #93c5fd;
+    }
+
+    .hover\:underline-offset-4:hover {
+        text-underline-offset: 4px;
+    }
+
+    .hover\:ring-2:hover {
+        --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+        --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+        box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+            var(--tw-shadow, 0 0 #0000);
+    }
+
+    @media (min-width: 640px) {
+        .sm\:float-none {
+            float: none;
+        }
+
+        .sm\:mr-0 {
+            margin-right: 0;
+        }
+
+        .sm\:flex {
+            display: flex;
+        }
+
+        .sm\:flex-row {
+            flex-direction: row;
+        }
+
+        .sm\:items-center {
+            align-items: center;
+        }
+
+        .sm\:justify-between {
+            justify-content: space-between;
+        }
+
+        .sm\:gap-x-4 {
+            -moz-column-gap: 1rem;
+            column-gap: 1rem;
+        }
+
+        .sm\:px-6 {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+
+        .sm\:py-3 {
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+        }
+
+        .sm\:px-3 {
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+        }
+
+        .sm\:px-8 {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .sm\:text-3xl {
+            font-size: 1.875rem;
+            line-height: 2.25rem;
+        }
+
+        .sm\:text-lg {
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+        }
+
+        .sm\:col-start-2 {
+            grid-column-start: 2;
+        }
+
+        .sm\:col-span-6 {
+            grid-column: span 6 / span 6;
+        }
+
+        .sm\:gap-8 {
+            gap: 2rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .md\:my-8 {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .md\:mb-0 {
+            margin-bottom: 0;
+        }
+
+        .md\:hidden {
+            display: none;
+        }
+
+        .md\:h-\[25rem\] {
+            height: 25rem;
+        }
+
+        .md\:w-\[23rem\] {
+            width: 23rem;
+        }
+
+        .md\:grid-cols-2 {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .md\:grid-cols-8 {
+            grid-template-columns: repeat(8, minmax(0, 1fr));
+        }
+
+        .md\:grid-cols-12 {
+            grid-template-tech-iconcolumns: repeat(12, minmax(0, 1fr));
+        }
+
+        .md\:px-24 {
+            padding-left: 6rem;
+            padding-right: 6rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .lg\:px-48 {
+            padding-left: 12rem;
+            padding-right: 12rem;
+        }
+
+        .lg\:col-span-4 {
+            grid-column: span 4 / span 4;
+        }
+
+        .lg\:self-start {
+            align-self: flex-start;
+        }
+
+        .lg\:top-8 {
+            top: 2rem;
+        }
+
+        .lg\:sticky {
+            position: sticky;
+        }
+
+        .lg\:flex {
+            display: flex;
+        }
+
+        .lg\:flex-col {
+            flex-direction: column;
+        }
+
+        .lg\:flex-row {
+            flex-direction: row;
+        }
+
+        .lg\:gap-6 {
+            gap: 1.5rem;
+        }
+    }
+
+    @media (min-width: 1280px) {
+        .xl\:px-72 {
+            padding-left: 18rem;
+            padding-right: 18rem;
+        }
+
+        .xl\:gap-16 {
+            gap: 4rem;
+        }
+    }
+
+    @media (min-width: 400px) {
+        .custom\:block {
+            display: block;
+        }
+    }
+
+    /* new css */
+    .bg-white {
+        background-color: #fff;
+    }
+
+    .bg-brand-black {
+        background-color: #1c1d21;
+    }
+
+    .bg-gray-200 {
+        background-color: #e5e7eb;
+    }
+
+    .text-brand-black {
+        color: #1c1d21;
+    }
+
+    .mx-auto {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .place-items-center {
+        place-items: center;
+    }
+
+    .flex-1 {
+        flex: 1 1 0%;
+    }
+
+    .skill-icon-w {
+        width: 66px;
+        height: 66px;
+    }
+
+    .self-center {
+        align-self: center;
+    }
+
+    .inline-block {
+        display: inline-block;
+    }
+
+    .mb-10 {
+        margin-bottom: 2.5rem;
+    }
+
+    .mb-6 {
+        margin-bottom: 1.5rem;
+    }
+
+    .ring-zinc-300 {
+        --tw-ring-opacity: 1;
+        --tw-ring-color: rgb(212 212 216 / var(--tw-ring-opacity));
+    }
+
+    .hover\:bg-transparent:hover {
+        background-color: transparent;
+    }
+
+    .hover\:text-white:hover {
+        color: #fff;
+    }
+
+    .hover\:text-brand-black:hover {
+        color: #1c1d21;
+    }
+
+    .mx-2 {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .mb-5 {
+        margin-bottom: 1.25rem;
+    }
+
+    .sticky {
+        position: sticky;
+    }
+
+    .top-0 {
+        top: 0;
+    }
+
+    .max-w-7xl {
+        max-width: 80rem;
+    }
+
+    .max-w-xs {
+        max-width: 20rem;
+    }
+
+    .h-36 {
+        height: 9rem;
+    }
+
+    .w-36 {
+        width: 9rem;
+    }
+
+    .max-w-sm {
+        max-width: 24rem;
+    }
+
+    .border-purple-200 {
+        --tw-border-opacity: 1;
+        border-color: rgb(233 213 255 / var(--tw-border-opacity));
+    }
+
+    .bg-black {
+        --tw-bg-opacity: 1;
+        background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+    }
+
+    .border {
+        border-width: 1px;
+    }
+
+    .rounded-t-lg {
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+    }
+
+    .p-5 {
+        padding: 1.25rem;
+    }
+
+    .hover\:scale-105:hover {
+        --tw-scale-x: 1.05;
+        --tw-scale-y: 1.05;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    }
+
+    .tech-icon {
+        height: 45px;
+        width: 45px;
+    }
+
+    .img-fix {
+        height: 165px;
+        width: 100%;
+    }
+</style>
 
 <body>
     <div id="__next">
-        <div class="px-2 sm:px-8 md:px-24 lg:px-48 xl:px-72 my-16">
-            <div class="flex flex-row items-center justify-center px-3 font-sen md:my-8 text-center">
+        <div class="px-2 sm:px-8 md:px-24 lg:px-48 xl:px-72">
+            <div class="flex flex-row items-center justify-between px-3 font-sen md:my-8">
                 <div>
-                    <p class="text-3xl font-bold text-white">Priti Shinde
-                        <a class="float-right mr-2 rounded-lg bg-zinc-800 text-2xl text-white ring-zinc-300 transition-all duration-150 hover:ring-2 sm:float-none md:hidden"
-                            target="_blank" rel="noopener noreferrer" aria-label="github-repo"
-                            href="https://github.com/carrotfarmer/portfolio-next">
-                        </a>
+                    <p class="text-3xl font-bold text-white">
+                        Priti Shinde<a
+                            class="float-right mr-2 rounded-lg bg-zinc-800 text-2xl text-white ring-zinc-300 transition-all duration-150 hover:ring-2 sm:float-none md:hidden"
+                            target="_blank" class="hover:scale-105" aria-label="github-repo"
+                            href="https://github.com/carrotfarmer/portfolio-next"><svg stroke="currentColor"
+                                fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21.035 5.257c.91 1.092 1.364 2.366 1.364 3.822 0 5.277-3.002 6.824-5.823 7.279.364.637.455 1.365.455 2.093v3.73c0 .455-.273.728-.637.728a.718.718 0 0 1-.728-.728v-3.73a2.497 2.497 0 0 0-.728-2.093l.455-1.183c2.821-.364 5.733-1.274 5.733-6.187 0-1.183-.455-2.275-1.274-3.185l-.182-.727a4.04 4.04 0 0 0 .09-2.73c-.454.09-1.364.273-2.91 1.365l-.547.09a13.307 13.307 0 0 0-6.55 0l-.547-.09C7.57 2.71 6.66 2.437 6.204 2.437c-.273.91-.273 1.91.09 2.73l-.181.727c-.91.91-1.365 2.093-1.365 3.185 0 4.822 2.73 5.823 5.732 6.187l.364 1.183c-.546.546-.819 1.274-.728 2.002v3.821a.718.718 0 0 1-.728.728.718.718 0 0 1-.728-.728V20.18c-3.002.637-4.185-.91-5.095-2.092-.455-.546-.819-1.001-1.274-1.092-.09-.091-.364-.455-.273-.819.091-.364.455-.637.82-.455.91.182 1.455.91 2 1.547.82 1.092 1.639 2.092 4.095 1.547v-.364c-.09-.728.091-1.456.455-2.093-2.73-.546-5.914-2.093-5.914-7.279 0-1.456.455-2.73 1.365-3.822-.273-1.273-.182-2.638.273-3.73l.455-.364C5.749 1.073 7.023.8 9.66 2.437a13.673 13.673 0 0 1 6.642 0C18.851.708 20.216.98 20.398 1.072l.455.364c.455 1.274.546 2.548.182 3.821z">
+                                </path>
+                            </svg></a>
                     </p>
-                    <p class="mt-1 text-lg text-gray-300">Full Stack Developer</p>
-                    <p class="mt-4 pb-5 text-gray-400">I am a full-stack developer with expertise in a wide range of technologies. During my 3 years of experience, I have worked on several projects from many different industries like Real Estate, eCommerce, and health.<br>
-My secret is that I constantly keep myself updated with new technologies. Some of the technologies that I work on include ReactJS, AngularJS, DRF, RestAPI, and Python. 
+                    <p class="mt-1 text-lg text-gray-300">
+                        Full Stack, React js, Anguler js, DRF , Rest API
                     </p>
+                    <p class="mt-4 pb-5 text-gray-400">
+                        I have 3 years of experience working as a full-stack developer with technologies like Python,
+                        ReactJS, etc.
+                    </p>
+                    <div></div>
                 </div>
             </div>
-            <div class="my-16 px-3 font-sen text-white text-center">
+            <div class="my-16 px-3 font-sen text-white">
+                <p class="text-3xl font-bold text-white">About Developer</p>
+                <p class="mt-4">
+                    I am a full-stack developer with expertise in a wide range of technologies. During my 3 years of
+                    experience, I have
+                    worked on several projects from many different industries like Real Estate, eCommerce, and health.
+
+                    My secret is that I constantly keep myself updated with new technologies. Some of the technologies
+                    that I work on
+                    include ReactJS, AngularJS, DRF, RestAPI, and Python.
+
+                    Skills:
+                    ReactJS, AngularJS, DRF, HTML, Python, Kotin, ReactAPI
+
+                </p>
+            </div>
+            <div class="my-16 px-3 font-sen text-white">
                 <p class="text-3xl font-bold text-white">Core Expertise</p>
-                <div class="mt-5 flex gap-4 justify-center flex-wrap">
-                    <div class="bg-white p-2 rounded-md skill-icon-w flex justify-center items-center" style="">
-                        <a href="https://acquaintsoft.com/services/reactjs-web-application-development" target="_blank" rel="noopener noreferrer" class="text-center" class="w-full self-center">
-                            <img src="/svg/front-end/react-50.svg" class="tech-icon">
-                        </a>
-                    </div>
-                    <div class="bg-white p-2 rounded-md skill-icon-w flex justify-center" style="">
-                        <a href="https://acquaintsoft.com/services/angularjs-application-development" target="_blank" rel="noopener noreferrer" class="text-center" class="w-full self-center">
-                            <img src="/svg/front-end/angular-50.svg" class="tech-icon">
-                        </a>
-                    </div>
-                    <div class="bg-white p-2 rounded-md skill-icon-w flex justify-center" style="">
-                        <a href="https://acquaintsoft.com/services/django-backend" target="_blank" rel="noopener noreferrer" class="text-center" class="w-full self-center">
-                            <img src="/svg/back-end/django-50.svg" class="tech-icon">
-                        </a>
-                    </div>
+                <div class="mt-5 grid grid-cols-3 gap-4 md:grid-cols-8">
+
+                    <a href="hhttps://acquaintsoft.com/services/django-backend" target="_blank"
+                        class="hover:scale-105 flex transition-all">
+                        <img src="/svg/back-end/django-50.svg" class="tech-icon" />
+                    </a>
+                    <a href="https://acquaintsoft.com/services/angularjs-application-development" target="_blank"
+                        class="hover:scale-105 flex transition-all">
+                        <img src="/svg/front-end/angular-50.svg" class="tech-icon" />
+                    </a>
+                    <a href="https://acquaintsoft.com/services/reactjs-web-application-development" target="_blank"
+                        class="hover:scale-105 flex transition-all">
+                        <img src="/svg/front-end/react-50.svg" class="tech-icon" />
+                    </a>
                 </div>
             </div>
-            <div class="my-16 px-3 font-sen text-white text-center">
+            <div class="my-16 px-3 font-sen text-white">
                 <p class="text-3xl font-bold text-white">Also Work With</p>
-                <div class="mt-5 flex gap-4 justify-center flex-wrap">
-                    <div class="bg-white p-2 rounded-md skill-icon-w flex justify-center" style="">
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="text-center" class="w-full self-center">
-                            <img src="/svg/back-end/kotlin.svg" class="tech-icon">
+                <div class="mt-5 grid grid-cols-3 gap-4 md:grid-cols-8">
+                    <a href="#" target="_blank" class="hover:scale-105 flex transition-all">
+                        <img src="/svg/back-end/kotlin.svg" class="tech-icon" />
+                    </a>
+
+                    <a href="https://acquaintsoft.com/services/python-web-application-development" target="_blank"
+                        class="hover:scale-105 flex transition-all">
+                        <img src="/svg/back-end/python-50.svg" class="tech-icon" />
+                    </a>
+                    <a href="https://acquaintsoft.com/services/html5-app-development-for-web-and-mobile" target="_blank"
+                        class="hover:scale-105 flex transition-all">
+                        <img src="/svg/front-end/html-50.svg" class="tech-icon" />
+                    </a>
+                    <a href="#" target="_blank" class="hover:scale-105 flex transition-all">
+                        <img src="/svg/front-end/js.png" class="tech-icon" />
+                    </a>
+                </div>
+            </div>
+            <div class="my-16 px-3 font-sen text-white">
+                <p class="text-3xl font-bold text-white">Projects</p>
+                <p class="text-1xl text-white">Here is a showcase of some of my best projects that I made.</p>
+
+                <div class="grid grid-cols-1 gap-7 pt-5 md:grid-cols-2">
+                    <div class="mb-5 max-w-sm rounded-lg border border-purple-200 bg-black shadow-md">
+                        <a href="https://acquaintsoft.com/our-work/laura-husson">
+                            <img src="img/small-5-(1).webp" alt="" class="rounded-t-lg img-fix" />
                         </a>
+                        <div class="p-5">
+                            <div class="text-xl font-bold">
+                                Laura Husson
+                            </div>
+                            <p>
+                                In the era of digitalization, an online presence is a must. And not just a web presence,
+                                it needs to be a standout one.
+                                Laura Husson handed her online appearance to us to serve your business with irresistible
+                                websites and savvy business
+                                strategies. Understanding her taste and quirkiness, we created her website that speaks
+                                about both her personality and
+                                work.
+                            </p>
+                            <a class="inline-block rounded-lg bg-purple-600 px-3 py-2 text-center text-sm font-medium text-white hover:bg-purple-500 focus:ring-4 focus:ring-blue-300 mt-4"
+                                href="https://acquaintsoft.com/our-work/laura-husson">Read more</a>
+                        </div>
                     </div>
-                    <div class="bg-white p-2 rounded-md skill-icon-w flex justify-center" style="">
-                        <a href="https://acquaintsoft.com/services/python-web-application-development" target="_blank" rel="noopener noreferrer" class="text-center" class="w-full self-center">
-                            <img src="/svg/back-end/python-50.svg" class="tech-icon">
+                    <div class="mb-5 max-w-sm rounded-lg border border-purple-200 bg-black shadow-md">
+                        <a href="https://acquaintsoft.com/our-work/music-launch-pad">
+                            <img src="img/small-1623661944.webp" alt="" class="rounded-t-lg img-fix" />
                         </a>
-                    </div>
-                    <div class="bg-white p-2 rounded-md skill-icon-w flex justify-center" style="">
-                        <a href="https://acquaintsoft.com/services/html5-app-development-for-web-and-mobile" target="_blank" rel="noopener noreferrer" class="text-center" class="w-full self-center">
-                            <img src="/svg/front-end/html-50.svg" class="tech-icon">
-                        </a>
-                    </div>
-                    <div class="bg-white p-2 rounded-md skill-icon-w flex justify-center" style="">
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="text-center" class="w-full self-center">
-                            <img src="/svg/front-end/js.png" class="tech-icon">
-                        </a>
+                        <div class="p-5">
+                            <div class="text-xl font-bold">An impressive launchpad to launch your music career</div>
+                            <p>
+                                Building a career in music is not a child’s play. How about you get free guidance on
+                                what to do and what not to do to
+                                take off your musical career? Chad Nellis came with a proposal to develop a website and
+                                mobile applications, which we
+                                delivered as he imagined. The cutting-edge tools and courses in it proved to be an
+                                affordable solution.
+                            </p>
+                            <a class="inline-block rounded-lg bg-purple-600 px-3 py-2 text-center text-sm font-medium text-white hover:bg-purple-500 focus:ring-4 focus:ring-blue-300 mt-4"
+                                href="https://acquaintsoft.com/our-work/music-launch-pad">Read more</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            
             <div class="text-center mb-10">
-                <a href="https://acquaintsoft.com/hire-developers" class="bg-white mt-5 mb-5 p-2 rounded-lg inline-block font-bold ring-zinc-300 transition-all duration-150 hover:ring-2 hover:bg-transparent hover:text-white mx-2">Hire Remote Devloper</a>
-                <a href="https://acquaintsoft.com/services/laravel-development-service" class="bg-white mt-5 mb-5 p-2 rounded-lg inline-block font-bold ring-zinc-300 transition-all duration-150 hover:ring-2 hover:bg-transparent hover:text-white mx-2">Laravel Development Company</a>
+                <p class="hover:text-white text-white">
+                    Hire Experts to Minimize Software Development Risks
+                </p>
+                <a href="https://acquaintsoft.com/hire-developers"
+                    class="bg-white mt-5 mb-5 p-2 rounded-lg inline-block font-bold ring-zinc-300 transition-all duration-150 hover:ring-2 hover:bg-transparent hover:text-white mx-2">
+                    Hire Remote developer</a>
+                <a href="https://acquaintsoft.com/services/laravel-development-service"
+                    class="bg-white mt-5 mb-5 p-2 rounded-lg inline-block font-bold ring-zinc-300 transition-all duration-150 hover:ring-2 hover:bg-transparent hover:text-white mx-2">
+                    Laravel Development Company</a>
             </div>
-            
             <div class="divide divide-y divide-dotted text-white">
                 <div></div>
                 <div class="px-3 font-sen" id="contact">
                     <div class="my-4 flex flex-row justify-center gap-x-4 pt-2">
-                        <a target="_blank"
+                        <a target="_blank" class="hover:scale-105" aria-label="contact icon"
                             class="rounded-lg bg-zinc-800 p-2 text-2xl text-white ring-zinc-300 transition-all duration-150 hover:ring-2"
-                            href="https://github.com/priti-shide">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img"
-                                viewBox="0 0 24 24" height="30" width="30" xmlns="http://www.w3.org/2000/svg">
+                            href="https://github.com/priti-shide"><svg stroke="currentColor" fill="currentColor"
+                                stroke-width="0" role="img" viewBox="0 0 24 24" height="30" width="30"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <title></title>
                                 <path
                                     d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12">
                                 </path>
-                            </svg>
-                        </a>
-                        <a target="_blank"
+                            </svg></a><a target="_blank" class="hover:scale-105" aria-label="contact icon"
                             class="rounded-lg bg-zinc-800 p-2 text-2xl text-white ring-zinc-300 transition-all duration-150 hover:ring-2"
-                            href="https://acquaintsoft.com/">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve" fill="currentColor" width="30" height="30">
-                            <path class="st0" d="M25,0C11.2,0,0,11.2,0,25c0,13.8,11.2,25,25,25c13.8,0,25-11.2,25-25C50,11.2,38.8,0,25,0z M45.4,17H34.8
-                                c-0.4-3.4-1.2-6.5-2.2-9.1c-0.6-1.6-1.2-2.9-2-4C37.4,5.7,42.8,10.6,45.4,17L45.4,17z M46.9,25c0,1.7-0.2,3.3-0.5,4.9H35.2
-                                c0.1-1.6,0.2-3.2,0.2-4.9c0-1.7-0.1-3.3-0.2-4.9h11.2C46.7,21.7,46.9,23.3,46.9,25L46.9,25z M25,46.9c-2.4,0-5.5-5.1-6.7-13.9h13.4
-                                C30.5,41.8,27.4,46.9,25,46.9L25,46.9z M18,29.9c-0.1-1.5-0.2-3.2-0.2-4.9c0-1.7,0.1-3.3,0.2-4.9H32c0.1,1.5,0.2,3.2,0.2,4.9
-                                c0,1.7-0.1,3.3-0.2,4.9H18z M3.1,25c0-1.7,0.2-3.3,0.6-4.9h11.2c-0.1,1.6-0.2,3.2-0.2,4.9c0,1.7,0.1,3.3,0.2,4.9H3.7
-                                C3.3,28.3,3.1,26.7,3.1,25L3.1,25z M25,3.1c2.4,0,5.5,5.1,6.7,13.9H18.3C19.5,8.2,22.6,3.1,25,3.1z M19.3,3.9c-0.7,1.1-1.4,2.5-2,4
-                                c-1,2.6-1.7,5.7-2.2,9.1H4.6C7.2,10.6,12.6,5.7,19.3,3.9L19.3,3.9z M4.6,33h10.5c0.4,3.4,1.2,6.5,2.2,9.1c0.6,1.6,1.2,2.9,2,4
-                                C12.6,44.3,7.2,39.4,4.6,33L4.6,33z M30.7,46.1c0.7-1.1,1.4-2.5,2-4c1-2.6,1.7-5.7,2.2-9.1h10.5C42.8,39.4,37.4,44.3,30.7,46.1
-                                L30.7,46.1z"/>
-                            </svg>
-                        </a>
-                        <a target="_blank"
+                            href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img"
+                                viewBox="0 0 24 24" class="text-blue-400" height="30" width="30"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title></title>
+                                <path
+                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z">
+                                </path>
+                            </svg></a><a target="_blank" class="hover:scale-105" aria-label="contact icon"
                             class="rounded-lg bg-zinc-800 p-2 text-2xl text-white ring-zinc-300 transition-all duration-150 hover:ring-2"
-                            href="mailto:sales@acquaintsoft.com">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                        viewBox="0 0 44.2 30" style="enable-background:new 0 0 44.2 30;" xml:space="preserve" fill="currentColor" width="30" height="30">
-                                <path class="st0" d="M2.8,0h38.5c0.4,0,0.7,0.1,1,0.2L22.2,21.6L2,0.1C2.2,0,2.5,0,2.8,0L2.8,0z M43.5,1L22.7,23.1c0,0,0,0,0,0v0
-                                    c-0.1,0.1-0.3,0.2-0.5,0.2c-0.2,0-0.4-0.1-0.5-0.2L0.7,0.9C0.3,1.4,0,2.1,0,2.8v24.4c0,0.7,0.3,1.5,0.8,2c0.5,0.5,1.2,0.8,2,0.8
-                                    h38.5c0.7,0,1.5-0.3,2-0.8c0.5-0.5,0.8-1.2,0.8-2V2.8C44.2,2.2,43.9,1.5,43.5,1L43.5,1z"/>
-                            </svg>
-                        </a>
+                            href="https://acquaintsoft.com/"><svg stroke="currentColor" fill="currentColor"
+                                stroke-width="0" role="img" viewBox="0 0 24 24" class="text-blue-600" height="30"
+                                width="30" xmlns="http://www.w3.org/2000/svg">
+                                <title></title>
+                                <path
+                                    d="M22.351 8.019l-6.37-6.37a5.63 5.63 0 0 0-7.962 0l-6.37 6.37a5.63 5.63 0 0 0 0 7.962l6.37 6.37a5.63 5.63 0 0 0 7.962 0l6.37-6.37a5.63 5.63 0 0 0 0-7.962zM12 15.953a3.953 3.953 0 1 1 0-7.906 3.953 3.953 0 0 1 0 7.906z">
+                                </path>
+                            </svg></a><a target="_blank" class="hover:scale-105" aria-label="contact icon"
+                            class="rounded-lg bg-zinc-800 p-2 text-2xl text-white ring-zinc-300 transition-all duration-150 hover:ring-2"
+                            href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img"
+                                viewBox="0 0 24 24" class="text-yellow-400" height="30" width="30"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title></title>
+                                <path
+                                    d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z">
+                                </path>
+                            </svg></a><a target="_blank" class="hover:scale-105" aria-label="contact icon"
+                            class="rounded-lg bg-zinc-800 p-2 text-2xl text-white ring-zinc-300 transition-all duration-150 hover:ring-2"
+                            href="mailto:sales@acquaintsoft.com"><svg stroke="currentColor" fill="none" stroke-width="2"
+                                viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="text-red-400"
+                                height="30" width="30" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+    <script id="__NEXT_DATA__" type="application/json">
+      {
+        "props": { "pageProps": {} },
+        "page": "/",
+        "query": {},
+        "buildId": "unkmCUY0scGMv0n46_VcX",
+        "nextExport": true,
+        "autoExport": true,
+        "isFallback": false,
+        "scriptLoader": []
+      }
+    </script>
 </body>
 
 </html>
